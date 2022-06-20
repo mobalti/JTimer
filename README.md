@@ -5,7 +5,11 @@ A time tracker and timesheet  app that lets you track work hours across projects
 
 
 
-https://user-images.githubusercontent.com/65825731/174676012-b1ed2c73-7923-46a0-a9ce-698a89c8333f.mp4
+
+https://user-images.githubusercontent.com/65825731/174676267-b355595d-4912-452f-98b0-de5e26eccfbe.mp4
+
+
+
 
 
 
