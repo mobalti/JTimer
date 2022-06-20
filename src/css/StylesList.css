@@ -1,0 +1,52 @@
+
+
+/*******************************************************************************
+ *                                                                             *
+ * List View                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+.list-view {
+    -fx-background-color: text_field_bg_color;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+
+    -fx-font-size: 1em; /* 12 */
+}
+
+.list-view:focused {
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+/********************* ListView List Cells ********************************/
+
+.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell {
+    -fx-padding: 0.666667em 1em 0.666667em 1em; /* 8 12 8 12 */
+    -fx-font-family: "Segoe UI";
+    -fx-text-fill: text_color;
+}
+
+.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell,
+.list-view:focused > .virtual-flow > .clipped-container > .sheet > .list-cell {
+    -fx-background-color: transparent;
+}
+
+
+.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:selected,
+.list-view.alternating-row-colors > .virtual-flow > .clipped-container > .sheet > .list-cell:selected {
+    -fx-background-color: accent_color;
+    -fx-background-insets: 0;
+    /*-fx-text-fill: ;*/
+}
+
+.list-view .scroll-bar:horizontal .increment-arrow,
+.list-view .scroll-bar:horizontal .decrement-arrow,
+.list-view .scroll-bar:horizontal .increment-button,
+.list-view .scroll-bar:horizontal .decrement-button {
+    -fx-padding:0;
+}
+

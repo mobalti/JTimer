@@ -1,0 +1,38 @@
+
+.scroll-pane {
+  -fx-background-color: transparent;
+  -fx-hbar-policy: never;
+}
+.scroll-bar > .decrement-button > .decrement-arrow,
+.scroll-bar > .increment-button > .increment-arrow,
+.scroll-bar .increment-button {
+  visibility: hidden;
+}
+
+.scroll-bar .decrement-button {
+  visibility: hidden;
+}
+
+
+.scroll-bar:vertical {
+  -fx-background-color: transparent;
+   -fx-pref-width: 10;
+}
+
+.scroll-bar:vertical .track-background {
+  visibility: hidden;
+}
+
+.scroll-bar:vertical .track {
+  visibility: hidden;
+}
+
+.hide-thumb .scroll-bar:vertical .thumb {
+  -fx-background-color: transparent;
+}
+
+.scroll-bar > .thumb{
+    -fx-background-color: #747474;
+}
+
+

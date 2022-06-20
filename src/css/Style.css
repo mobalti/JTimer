@@ -1,0 +1,371 @@
+.root {
+  accent_color: #0078D7;
+  top_pane_color: #000000;
+  right_pane_color: #171717;
+  text_field_bg_color: #0E0E0E;
+  border_text_filed_color: #747474;
+  text_color: #FFFFFF;
+  main_background_color: #2B2B2B;
+
+}
+
+.main-pane {
+ -fx-background-color: main_background_color;
+}
+
+.top-pane {
+ -fx-background-color: top_pane_color;
+}
+
+.right-pane {
+ -fx-background-color: right_pane_color;
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Top button                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+
+.top-button {
+ -fx-background-color: transparent;
+ /*-fx-background-insets: 1,2,3,4;*/
+ -fx-border-width: 0 0 2 0;
+ -fx-border-color: transparent;
+ -fx-font: 14px "Segoe UI";
+ -fx-text-fill: border_text_filed_color;
+}
+
+.top-button: selected {
+ -fx-background-color: transparent;
+ -fx-border-color: accent_color;
+ -fx-text-fill:text_color;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * play button                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+
+
+
+.report-button {
+ -fx-background-color: accent_color;
+ -fx-font: 14px "Segoe UI";
+ -fx-text-fill: text_color;
+ -fx-background-radius: 0;
+}
+
+.report-button: hover {
+-fx-background-color: derive(accent_color, 20%);
+}
+.icon-report-button {
+ -fx-text-fill: text_color;
+ -fx-font: 22px "Segoe MDL2 Assets";
+}
+
+.report-button: pressed {
+-fx-background-color: border_text_filed_color;
+
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * text button                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+
+
+.text-field {
+ -fx-prompt-text-fill: border_text_filed_color;
+ -fx-background-color: text_field_bg_color;
+ -fx-background-radius: 0;
+ -fx-border-width: 2;
+ -fx-border-color: border_text_filed_color;
+ -fx-font: 14px "Segoe UI";
+ -fx-text-fill: text_color;
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * accent button                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+
+
+
+.accent-button {
+-fx-font: 14px "Segoe UI";
+-fx-text-fill:text_color;
+-fx-background-color:accent_color;
+-fx-border-width: 0;
+-fx-background-radius: 0;
+}
+
+.accent-button: pressed {
+-fx-background-color: derive(accent_color, 20%);
+}
+
+.accent-button: disabled {
+-fx-background-color: main_background_color;
+-fx-text-fill:derive(border_text_filed_color, 50%);
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * accent button                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+
+.right-tog-button {
+-fx-font: 14px "Segoe UI";
+-fx-background-color:accent_color;
+-fx-text-fill:text_color;
+-fx-border-width: 0;
+-fx-background-radius: 0;
+}
+
+.right-tog-button: selected {
+-fx-background-color: main_background_color;
+-fx-text-fill:derive(border_text_filed_color, 50%);
+}
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * progress Indicator                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+
+.progress-indicator .percentage {
+    -fx-fill:null;
+}
+
+.progress-indicator .progress {
+   -fx-background-color: accent_color;
+}
+/*main style*/
+/*
+.progress-indicator > .determinate-indicator > .indicator {
+    -fx-background-color: white,red,red, main_background_color;
+    */
+/*bg = progress size*//*
+
+    */
+/*-fx-background-insets: 2, 2, 2, 2;*//*
+
+*/
+/*    -fx-border-width: 2 1 1 2;
+    -fx-border-color: text_color;*//*
+
+    -fx-background-insets: -2, 1, 2, 2;
+}
+*/
+
+.progress-indicator > .determinate-indicator > .indicator {
+    -fx-background-color: white, main_background_color;
+    -fx-background-insets: -5, 2, 0, 0;
+}
+
+
+
+/*main style*/
+/*.progress-indicator > .determinate-indicator > .indicator {
+    -fx-background-color: white, black;
+    -fx-background-insets: 0, 0, 3, 3;
+    -fx-border-width: 2 1 1 2;
+    -fx-border-color: text_color;
+}*/
+
+/*
+.progress-indicator > .determinate-indicator > .indicator {
+    -fx-background-color: white,
+    radial-gradient(center 50% 50%, radius 50%, -fx-control-inner-background 70%, derive(-fx-control-inner-background, -9%) 100%),
+    -fx-control-inner-background;
+    -fx-background-insets: 0, 1, 5 2 1 2;
+    -fx-padding: 0.166667em;
+
+}
+*/
+
+/***********************Time button**************/
+
+.time-button {
+-fx-font: 22px "Segoe MDL2 Assets";
+-fx-background-color:transparent;
+-fx-text-fill:text_color;
+-fx-background-radius: 0;
+}
+
+.time-button: hover {
+-fx-background-color:derive(border_text_filed_color, -50%);
+}
+.time-button: pressed {
+-fx-background-color:derive(border_text_filed_color, -30%);
+}
+
+.start-button {
+ -fx-font: 22px "Segoe MDL2 Assets";
+ -fx-background-color:transparent;
+ -fx-background-radius: 33;
+ -fx-text-fill:text_color;
+ -fx-border-width: 2;
+ -fx-border-color: border_text_filed_color;
+ -fx-border-radius: 33;
+}
+
+.start-button: hover {
+ -fx-background-color:derive(border_text_filed_color, -50%);
+}
+
+.start-button: pressed {
+ -fx-background-color:derive(border_text_filed_color, -30%);
+}
+
+.start-button: disabled {
+ -fx-text-fill:border_text_filed_color;
+}
+
+/**************************/
+.combo-box-base {
+ -fx-prompt-text-fill:text_color;
+ -fx-background-color: text_field_bg_color;
+ -fx-background-radius: 0;
+ -fx-border-width: 2;
+ -fx-border-color: derive(border_text_filed_color, -20%);
+ -fx-font: 14px "Segoe UI";
+ -fx-text-fill: text_color;
+}
+.combo-box-base > .list-cell {
+    -fx-text-fill: text_color;
+}
+
+.combo-box-base:hover {
+    -fx-border-color: border_text_filed_color;
+}
+
+.combo-box-popup > .list-view {
+ -fx-background-color: text_field_bg_color;
+ -fx-background-insets: 0;
+  -fx-padding: 0;
+}
+
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell {
+     -fx-padding: 0.666667em 1em 0.666667em 1em; /* 8 12 8 12 */
+     -fx-font-family: "Segoe UI";
+      -fx-text-fill: text_color;
+     /* -fx-background-color: text_field_bg_color;*/
+ }
+
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell,
+ .combo-box-popup > .list-view:focused > .virtual-flow > .clipped-container > .sheet > .list-cell {
+     -fx-background-color: transparent;
+ }
+
+ .combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:selected,
+ .combo-box-popup > .list-view.alternating-row-colors > .virtual-flow > .clipped-container > .sheet > .list-cell:selected {
+     -fx-background-color: accent_color;
+     -fx-background-insets: 0;
+     /*-fx-text-fill: ;*/
+ }
+
+ .combo-box-popup >.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:hover,
+ .combo-box-popup > .list-view.alternating-row-colors > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:hover {
+     -fx-background-color: border_text_filed_color;
+ }
+
+
+.chart-pie-label {
+ -fx-fill: text_color;
+ }
+
+.pie-button {
+-fx-background-color: transparent;
+-fx-font: 14px "Segoe UI";
+-fx-text-fill:derive(border_text_filed_color, 50%);
+}
+
+.pie-button: hover {
+-fx-text-fill: derive(border_text_filed_color, 80%);
+}
+
+.pie-button: pressed {
+-fx-text-fill: text_color;
+}
+
+
+.tog-pie-button {
+ -fx-background-color: transparent;
+ -fx-font: 14px "Segoe UI";
+ -fx-text-fill:text_color;
+ -fx-background-radius: 0px;
+}
+
+.tog-pie-button:hover {
+ -fx-background-color: derive(border_text_filed_color, -20%);
+}
+
+.tog-pie-button:selected {
+ -fx-background-color: accent_color;
+}
+
+/*****************Table view****************/
+
+.table-view .column-header {
+    -fx-padding: 0em 0em 0em 1em;
+}
+
+.table-view .column-header .label {
+    -fx-padding: 0.666666em 2em 0.666666em 0;
+}
+
+.table-cell {
+    -fx-padding: 0.833333em 2em 0.5em 1em;
+}
+
+.table-view{
+    -fx-base: text_field_bg_color;
+}
+
+.table-view:focused:row-selection > .virtual-flow > .clipped-container > .sheet > .table-row-cell:selected {
+    -fx-background-color: accent_color;
+}
+
+
+.table-view{
+  -fx-background-color: main_background_color;
+  -fx-selection-bar-non-focused: derive(-fx-base, 50%);
+}
+
+.table-view .column-header .label{
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-weight: none;
+}
+
+
+.table-row-cell:even,
+.table-row-cell:odd{
+    -fx-control-inner-background: derive(-fx-base, 15%);
+}
+
+.table-row-cell{
+    -fx-table-cell-border-color:transparent;
+}
+
+.table-view .scroll-bar:horizontal .increment-arrow,
+.table-view .scroll-bar:horizontal .decrement-arrow,
+.table-view .scroll-bar:horizontal .increment-button,
+.table-view .scroll-bar:horizontal .decrement-button {
+    -fx-padding:0;
+}
+
+
+
+
+
+
+

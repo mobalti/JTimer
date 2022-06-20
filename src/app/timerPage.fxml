@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="495.0" spacing="50.0" styleClass="main-pane" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.TimerController">
+   <children>
+      <HBox fx:id="topPaneTimer" alignment="CENTER_RIGHT" maxHeight="-Infinity" prefHeight="25.0" prefWidth="495.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Pane prefHeight="38.0" prefWidth="140.0" HBox.hgrow="ALWAYS" />
+            <Label fx:id="checkTimerLabel" text="Timer done" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+            <Pane layoutX="189.0" layoutY="10.0" prefHeight="38.0" prefWidth="84.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="addBtn" mnemonicParsing="false" onAction="#add" prefHeight="55.0" prefWidth="55.0" styleClass="time-button" text="" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="64.0" prefWidth="495.0" spacing="10.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label text="Hours" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="hourChoice" prefWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="183.0" layoutY="10.0" spacing="10.0">
+               <children>
+                  <Label text="Minutes" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="minChoice" prefWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="263.0" layoutY="10.0" spacing="10.0">
+               <children>
+                  <Label text="Seconds" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="secChoice" prefWidth="150.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" prefWidth="495.0" spacing="20.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Text fx:id="timerText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00">
+               <font>
+                  <Font name="Segoe UI" size="64.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" spacing="50.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="resetBtn" mnemonicParsing="false" onAction="#reset" prefHeight="55.0" prefWidth="55.0" styleClass="time-button" text="" />
+            <Button fx:id="playBtn" mnemonicParsing="false" onAction="#start" prefHeight="65.0" prefWidth="65.0" styleClass="start-button" text="">
+               <font>
+                  <Font name="Segoe MDL2 Assets" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="stopBtn" mnemonicParsing="false" onAction="#stop" prefHeight="55.0" prefWidth="55.0" styleClass="time-button" text="" />
+         </children>
+      </HBox>
+      <Pane prefHeight="9.0" prefWidth="495.0" VBox.vgrow="ALWAYS" />
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefHeight="36.0" prefWidth="495.0">
+         <children>
+            <Label fx:id="trackNameLabel" text="Track: name" textFill="#747474">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="30.0" right="30.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
