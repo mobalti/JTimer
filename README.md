@@ -27,7 +27,7 @@ https://user-images.githubusercontent.com/65825731/174676267-b355595d-4912-452f-
 This program requires at least Java 16 to compile and run properly.
 
 ## Credits
-**Author:** Mo Balić - [mobalic](https://github.com/mobalic)
+**Author:** Mo Balti - [mobalti](https://github.com/mobalti)
 
 
 ## License
